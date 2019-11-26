@@ -1,0 +1,38 @@
+{
+  "name": "svg-shapes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf ./dist && npx parcel ./src/index.html && npx parcel watch ./src/index.hml",
+    "build": "npx parcel build -d ./build --no-cache --no-source-maps --detailed-report 10 --log-level 4 ./src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-react": "^7.7.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "~1.12.4",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "node-sass": "^4.13.0",
+    "src": "^1.1.2",
+    "style.css": "^1.0.0"
+  },
+  "alias": {
+    "#component": "./src/component"
+  }
+}
